@@ -2,9 +2,9 @@
 
 import React, { useRef } from 'react';
 import { cn } from '@udecode/cn';
+import { ELEMENT_BLOCKQUOTE } from '@udecode/plate-block-quote';
 import { CommentsProvider } from '@udecode/plate-comments';
 import { Plate } from '@udecode/plate-common';
-import { ELEMENT_PARAGRAPH } from '@udecode/plate-paragraph';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 
@@ -26,7 +26,7 @@ export default function PlateEditor() {
   const initialValue = [
     {
       id: '1',
-      type: ELEMENT_PARAGRAPH,
+      type: ELEMENT_BLOCKQUOTE,
       children: [{ text: 'Hello, World!' }],
     },
   ];

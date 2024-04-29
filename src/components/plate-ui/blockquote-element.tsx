@@ -10,7 +10,10 @@ export const BlockquoteElement = withRef<typeof PlateElement>(
       <PlateElement
         ref={ref}
         asChild
-        className={cn('my-1 border-l-2 pl-6 italic', className)}
+        className={cn(
+          'my-1 rounded-sm border p-3 hover:border-[#FE6610]',
+          className
+        )}
         {...props}
       >
         <blockquote>{children}</blockquote>
